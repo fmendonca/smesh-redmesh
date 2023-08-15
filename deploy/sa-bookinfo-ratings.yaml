@@ -1,0 +1,11 @@
+apiVersion: v1
+imagePullSecrets:
+- name: bookinfo-ratings-dockercfg-6mp8t
+kind: ServiceAccount
+metadata:
+  labels:
+    account: ratings
+  name: bookinfo-ratings
+  namespace: green-bookinfo1-app
+secrets:
+- name: bookinfo-ratings-dockercfg-6mp8t

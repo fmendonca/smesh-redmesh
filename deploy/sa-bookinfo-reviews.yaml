@@ -1,0 +1,11 @@
+apiVersion: v1
+imagePullSecrets:
+- name: bookinfo-reviews-dockercfg-n995z
+kind: ServiceAccount
+metadata:
+  labels:
+    account: reviews
+  name: bookinfo-reviews
+  namespace: green-bookinfo1-app
+secrets:
+- name: bookinfo-reviews-dockercfg-n995z

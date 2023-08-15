@@ -1,0 +1,11 @@
+apiVersion: v1
+imagePullSecrets:
+- name: bookinfo-details-dockercfg-87pgl
+kind: ServiceAccount
+metadata:
+  labels:
+    account: details
+  name: bookinfo-details
+  namespace: green-bookinfo1-app
+secrets:
+- name: bookinfo-details-dockercfg-87pgl
