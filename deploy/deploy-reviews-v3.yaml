@@ -4,19 +4,14 @@ metadata:
   annotations:
     app.openshift.io/connects-to: '[{"apiVersion":"apps/v1","kind":"Deployment","name":"ratings-v1"}]'
     deployment.kubernetes.io/revision: "1"
-    meta.helm.sh/release-name: mesh1-ossm-federation-bookinfo
-    meta.helm.sh/release-namespace: teste-bookinfo
-  creationTimestamp: "2023-08-15T14:25:18Z"
   generation: 3
   labels:
     app: reviews
-    app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: reviews
     app.openshift.io/runtime: java
     version: v3
   name: reviews-v3
   namespace: red-bookinfo1-app
-  uid: 1c0aaf57-d70f-417e-8fef-51a1ac01e3b9
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -69,22 +64,3 @@ spec:
         name: wlp-output
       - emptyDir: {}
         name: tmp
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2023-08-15T14:25:18Z"
-    lastUpdateTime: "2023-08-15T14:26:07Z"
-    message: ReplicaSet "reviews-v3-84b94f7bfd" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  - lastTransitionTime: "2023-08-15T15:25:28Z"
-    lastUpdateTime: "2023-08-15T15:25:28Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  observedGeneration: 3
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1

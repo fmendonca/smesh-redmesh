@@ -1,11 +1,8 @@
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
-  creationTimestamp: "2023-08-15T16:06:30Z"
-  generation: 1
   name: details
   namespace: red-bookinfo1-app
-  uid: e2e61bfc-a71e-49a7-a8c4-5b555a7faf9c
 spec:
   hosts:
   - details

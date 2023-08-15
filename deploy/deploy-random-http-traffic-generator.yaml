@@ -1,21 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    app.openshift.io/connects-to: '[{"apiVersion":"apps/v1","kind":"Deployment","name":"productpage-v1"}]'
-    deployment.kubernetes.io/revision: "2"
-    meta.helm.sh/release-name: mesh1-ossm-federation-bookinfo
-    meta.helm.sh/release-namespace: teste-bookinfo
-  creationTimestamp: "2023-08-15T14:25:18Z"
-  generation: 2
   labels:
     app: random-http-traffic-generator
-    app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: traffic-generator
     app.openshift.io/runtime: other-linux
   name: random-http-traffic-generator
   namespace: red-bookinfo1-app
-  uid: bf21761e-67c6-4387-a2ff-8a50a3b6caf3
 spec:
   progressDeadlineSeconds: 600
   replicas: 5

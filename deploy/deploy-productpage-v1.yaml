@@ -1,22 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    app.openshift.io/connects-to: '[{"apiVersion":"apps/v1","kind":"Deployment","name":"details-v1"},{"apiVersion":"apps/v1","kind":"Deployment","name":"reviews-v2"},{"apiVersion":"apps/v1","kind":"Deployment","name":"reviews-v1"},{"apiVersion":"apps/v1","kind":"Deployment","name":"reviews-v3"}]'
-    deployment.kubernetes.io/revision: "1"
-    meta.helm.sh/release-name: mesh1-ossm-federation-bookinfo
-    meta.helm.sh/release-namespace: teste-bookinfo
-  creationTimestamp: "2023-08-15T14:25:18Z"
   generation: 1
   labels:
     app: productpage
-    app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: productpage
     app.openshift.io/runtime: python
     version: v1
   name: productpage-v1
   namespace: red-bookinfo1-app
-  uid: 9a769612-60d8-478a-a6de-d406cff9ef31
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -62,22 +54,3 @@ spec:
       volumes:
       - emptyDir: {}
         name: tmp
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2023-08-15T14:26:12Z"
-    lastUpdateTime: "2023-08-15T14:26:12Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  - lastTransitionTime: "2023-08-15T14:25:18Z"
-    lastUpdateTime: "2023-08-15T14:26:12Z"
-    message: ReplicaSet "productpage-v1-75fb746c56" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  observedGeneration: 1
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1
