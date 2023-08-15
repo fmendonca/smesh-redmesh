@@ -11,7 +11,6 @@ metadata:
     service: details
   name: details
   namespace: red-bookinfo1-app
-  resourceVersion: "59442"
   uid: 124c0e14-84ce-4f18-9b0e-8ce0b91f8abc
 spec:
   clusterIP: 172.30.90.246

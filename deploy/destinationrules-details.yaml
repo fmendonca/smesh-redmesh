@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/managed-by: Helm
   name: details
   namespace: red-bookinfo1-app
-  resourceVersion: "59517"
   uid: 32ce1120-464d-41e7-8eab-3fa0b46401e3
 spec:
   host: details

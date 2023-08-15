@@ -15,7 +15,6 @@ metadata:
     version: v1
   name: ratings-v1
   namespace: red-bookinfo1-app
-  resourceVersion: "60915"
   uid: a4f4bfca-fc0a-471d-90d1-e696421daca6
 spec:
   progressDeadlineSeconds: 600

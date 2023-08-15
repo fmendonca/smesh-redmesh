@@ -5,7 +5,6 @@ metadata:
   generation: 1
   name: details
   namespace: red-bookinfo1-app
-  resourceVersion: "105557"
   uid: e2e61bfc-a71e-49a7-a8c4-5b555a7faf9c
 spec:
   hosts:

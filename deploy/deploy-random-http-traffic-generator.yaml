@@ -15,7 +15,6 @@ metadata:
     app.openshift.io/runtime: other-linux
   name: random-http-traffic-generator
   namespace: red-bookinfo1-app
-  resourceVersion: "60822"
   uid: bf21761e-67c6-4387-a2ff-8a50a3b6caf3
 spec:
   progressDeadlineSeconds: 600

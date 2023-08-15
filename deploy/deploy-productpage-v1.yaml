@@ -16,7 +16,6 @@ metadata:
     version: v1
   name: productpage-v1
   namespace: red-bookinfo1-app
-  resourceVersion: "60938"
   uid: 9a769612-60d8-478a-a6de-d406cff9ef31
 spec:
   progressDeadlineSeconds: 600

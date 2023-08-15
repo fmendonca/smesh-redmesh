@@ -15,7 +15,6 @@ metadata:
     version: v1
   name: details-v1
   namespace: red-bookinfo1-app
-  resourceVersion: "60658"
   uid: d38a997a-b0ef-45a1-9f3d-09be35d980cf
 spec:
   progressDeadlineSeconds: 600

@@ -11,7 +11,6 @@ metadata:
     service: productpage
   name: productpage
   namespace: red-bookinfo1-app
-  resourceVersion: "59427"
   uid: 0582c46e-a8ea-471f-8d72-7df039aa7058
 spec:
   clusterIP: 172.30.198.152

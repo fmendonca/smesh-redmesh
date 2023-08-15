@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/managed-by: Helm
   name: bookinfo-gateway
   namespace: red-bookinfo1-app
-  resourceVersion: "59573"
   uid: acb28555-1dfb-4351-ba23-d7c5ad802935
 spec:
   selector:

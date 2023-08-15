@@ -11,7 +11,6 @@ metadata:
     service: ratings
   name: ratings
   namespace: red-bookinfo1-app
-  resourceVersion: "59436"
   uid: ee9b444a-ff30-4af3-aac0-62799ab1904d
 spec:
   clusterIP: 172.30.121.158

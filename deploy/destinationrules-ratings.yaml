@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/managed-by: Helm
   name: ratings
   namespace: red-bookinfo1-app
-  resourceVersion: "59520"
   uid: dd2a029b-abbe-4473-8218-4d18a97fde6a
 spec:
   host: ratings

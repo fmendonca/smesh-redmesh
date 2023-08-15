@@ -5,7 +5,6 @@ metadata:
   generation: 1
   name: ratings
   namespace: red-bookinfo1-app
-  resourceVersion: "107593"
   uid: 2539c43f-bd9f-40d1-9d5d-6f0805d29318
 spec:
   hosts:

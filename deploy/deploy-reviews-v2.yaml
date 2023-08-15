@@ -16,7 +16,6 @@ metadata:
     version: v2
   name: reviews-v2
   namespace: red-bookinfo1-app
-  resourceVersion: "87437"
   uid: 3eaad774-ed58-4bf7-bf30-4fb52a3cfe1b
 spec:
   progressDeadlineSeconds: 600
