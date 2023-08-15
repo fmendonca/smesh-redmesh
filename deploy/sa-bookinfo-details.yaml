@@ -6,6 +6,6 @@ metadata:
   labels:
     account: details
   name: bookinfo-details
-  namespace: green-bookinfo1-app
+  namespace: red-bookinfo1-app
 secrets:
 - name: bookinfo-details-dockercfg-87pgl

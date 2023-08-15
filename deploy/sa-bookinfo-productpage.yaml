@@ -6,6 +6,6 @@ metadata:
   labels:
     account: productpage
   name: bookinfo-productpage
-  namespace: green-bookinfo1-app
+  namespace: red-bookinfo1-app
 secrets:
 - name: bookinfo-productpage-dockercfg-x2mkh
