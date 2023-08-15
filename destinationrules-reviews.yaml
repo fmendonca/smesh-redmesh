@@ -1,0 +1,37 @@
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  annotations:
+    meta.helm.sh/release-name: mesh1-ossm-federation-bookinfo
+    meta.helm.sh/release-namespace: teste-bookinfo
+  creationTimestamp: "2023-08-15T14:25:18Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  name: reviews
+  namespace: red-bookinfo1-app
+  resourceVersion: "59515"
+  uid: de4eff8f-9b33-4877-a0cd-9dc213a02bc9
+spec:
+  host: reviews
+  subsets:
+  - labels:
+      version: v1
+    name: v1
+  - labels:
+      version: v2
+    name: v2
+  - labels:
+      version: v3
+    name: v3
+  trafficPolicy:
+    loadBalancer:
+      localityLbSetting:
+        enabled: true
+        failover:
+        - from: red-mesh
+          to: green-mesh
+    outlierDetection:
+      baseEjectionTime: 1m
+      consecutive5xxErrors: 3
+      interval: 10s

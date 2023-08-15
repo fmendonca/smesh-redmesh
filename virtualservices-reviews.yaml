@@ -1,0 +1,26 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  creationTimestamp: "2023-08-15T16:06:29Z"
+  generation: 3
+  name: reviews
+  namespace: red-bookinfo1-app
+  resourceVersion: "108416"
+  uid: 2579d5d9-c98f-4341-b869-a8d5b1fcb742
+spec:
+  hosts:
+  - reviews
+  http:
+  - route:
+    - destination:
+        host: reviews
+        subset: v1
+      weight: 4
+    - destination:
+        host: reviews
+        subset: v2
+      weight: 95
+    - destination:
+        host: reviews
+        subset: v3
+      weight: 1

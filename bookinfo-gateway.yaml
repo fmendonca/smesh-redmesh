@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  annotations:
+    meta.helm.sh/release-name: mesh1-ossm-federation-bookinfo
+    meta.helm.sh/release-namespace: teste-bookinfo
+  creationTimestamp: "2023-08-15T14:25:19Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  name: bookinfo-gateway
+  namespace: red-bookinfo1-app
+  resourceVersion: "59573"
+  uid: acb28555-1dfb-4351-ba23-d7c5ad802935
+spec:
+  selector:
+    app: istio-ingressgateway
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - '*'
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
